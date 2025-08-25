@@ -64,27 +64,52 @@
                 </div>
 
                 <div class="legal-section">
-                    <h2>2. Information We Collect</h2>
+                    <h2>2. Google User Data Access and Usage</h2>
                     
-                    <h3>2.1 Information You Provide</h3>
+                    <div class="google-data-notice">
+                        <h3>🔒 Important: Google User Data Access</h3>
+                        <p><strong>DriveBackup Pro accesses your Google Drive data solely for the purpose of creating local backups of your files. We do not store, analyze, share, or use your data for any other purpose.</strong></p>
+                    </div>
+
+                    <h3>2.1 Google OAuth 2.0 Authentication</h3>
                     <ul>
-                        <li><strong>Authentication Information:</strong> When you authenticate with Google Drive, we receive access tokens and refresh tokens through Google's OAuth 2.0 flow. We do not store your Google account credentials.</li>
-                        <li><strong>Application Settings:</strong> We may store your application preferences and configuration settings locally on your device.</li>
-                        <li><strong>Support Communications:</strong> If you contact us for support, we may collect information you provide in those communications.</li>
+                        <li><strong>Authentication Process:</strong> When you use DriveBackup Pro, you authenticate with Google using OAuth 2.0. This process is handled entirely by Google's secure authentication system.</li>
+                        <li><strong>Access Tokens:</strong> We receive temporary access tokens from Google to access your Drive files. These tokens are stored locally on your device and encrypted.</li>
+                        <li><strong>No Credentials Stored:</strong> We never store your Google account username, password, or any other login credentials.</li>
+                        <li><strong>Token Management:</strong> Access tokens are automatically refreshed by Google's OAuth system and stored securely on your local device.</li>
                     </ul>
 
-                    <h3>2.2 Information We Collect Automatically</h3>
+                    <h3>2.2 Google Drive Data Access</h3>
                     <ul>
-                        <li><strong>Usage Data:</strong> We may collect anonymous usage statistics to improve our application performance and user experience.</li>
-                        <li><strong>Error Logs:</strong> We may collect error logs and crash reports to help identify and fix technical issues.</li>
-                        <li><strong>Application Performance:</strong> We may collect performance metrics to optimize our application.</li>
+                        <li><strong>Read-Only Access:</strong> DriveBackup Pro requests read-only access to your Google Drive files and folders. We cannot modify, delete, or create files in your Drive.</li>
+                        <li><strong>File Metadata Access:</strong> We access file names, sizes, modification dates, MIME types, and folder structure to facilitate backup operations.</li>
+                        <li><strong>File Content Access:</strong> We download the actual content of your files to create local backups. This is the core functionality of our application.</li>
+                        <li><strong>Shared Drive Access:</strong> If you have access to shared drives, we can access files in those drives that you have permission to view.</li>
+                        <li><strong>Scope of Access:</strong> We only access files and folders that you explicitly select for backup. We do not scan or access your entire Drive without your consent.</li>
                     </ul>
 
-                    <h3>2.3 Information from Google APIs</h3>
+                    <h3>2.3 Data Processing and Storage</h3>
                     <ul>
-                        <li><strong>File Metadata:</strong> We access file names, sizes, modification dates, and MIME types to facilitate backup operations.</li>
-                        <li><strong>Folder Structure:</strong> We access folder names and hierarchy to maintain your file organization.</li>
-                        <li><strong>Shared Drive Information:</strong> If you have access to shared drives, we may access shared drive names and structure.</li>
+                        <li><strong>Local Processing:</strong> All file processing occurs locally on your device. Files are downloaded directly to your computer.</li>
+                        <li><strong>No Server Storage:</strong> We do not upload or store any of your files on our servers. All backup data remains on your local device.</li>
+                        <li><strong>No Cloud Storage:</strong> We do not use any cloud storage services to store your backup data.</li>
+                        <li><strong>No Data Analysis:</strong> We do not analyze the content of your files for any purpose other than creating backups.</li>
+                        <li><strong>No Data Sharing:</strong> We do not share your files or data with any third parties.</li>
+                    </ul>
+
+                    <h3>2.4 Information We Collect Automatically</h3>
+                    <ul>
+                        <li><strong>Application Settings:</strong> We store your application preferences and configuration settings locally on your device.</li>
+                        <li><strong>Backup Logs:</strong> We maintain logs of backup operations locally for troubleshooting purposes.</li>
+                        <li><strong>Error Reports:</strong> We may collect anonymous error reports to improve application stability (no personal data included).</li>
+                        <li><strong>Usage Statistics:</strong> We may collect anonymous usage statistics to improve our application (no personal or file data included).</li>
+                    </ul>
+
+                    <h3>2.5 Support Communications</h3>
+                    <ul>
+                        <li><strong>Support Requests:</strong> If you contact us for support, we may collect information you provide in those communications.</li>
+                        <li><strong>No File Data in Support:</strong> We do not request or collect your actual files or personal data in support communications.</li>
+                        <li><strong>Support Data Retention:</strong> Support communications are retained for service improvement and may be stored securely.</li>
                     </ul>
                 </div>
 

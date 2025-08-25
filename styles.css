@@ -2584,3 +2584,226 @@ html {
     width: 18px;
     font-size: 1rem;
 }
+
+/* Legal Content Styles */
+.legal-content {
+    padding: 120px 0 80px;
+    background: #f8fafc;
+    min-height: 100vh;
+}
+
+.legal-header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.legal-header h1 {
+    color: #07553B;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.last-updated {
+    color: #6b7280;
+    font-style: italic;
+}
+
+.legal-body {
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 3rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.legal-section {
+    margin-bottom: 2.5rem;
+}
+
+.legal-section h2 {
+    color: #07553B;
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    border-bottom: 2px solid #e5e7eb;
+    padding-bottom: 0.5rem;
+}
+
+.legal-section h3 {
+    color: #1a1a1a;
+    font-size: 1.2rem;
+    margin: 1.5rem 0 1rem;
+}
+
+.legal-section p {
+    color: #4b5563;
+    line-height: 1.7;
+    margin-bottom: 1rem;
+}
+
+.legal-section ul {
+    margin: 1rem 0;
+    padding-left: 1.5rem;
+}
+
+.legal-section li {
+    color: #4b5563;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+}
+
+.google-data-notice {
+    background: linear-gradient(135deg, #07553B 0%, #0d7a5a 100%);
+    color: white;
+    padding: 25px;
+    border-radius: 12px;
+    margin: 20px 0;
+    border-left: 5px solid #fbbf24;
+}
+
+.google-data-notice h3 {
+    color: white;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
+}
+
+.google-data-notice p {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Privacy Notice on Homepage */
+.privacy-notice {
+    background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 100%);
+    border: 2px solid #bbf7d0;
+    border-radius: 12px;
+    padding: 20px;
+    margin: 2rem 0;
+    box-shadow: 0 4px 15px rgba(7, 85, 59, 0.1);
+}
+
+.privacy-notice-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 15px;
+}
+
+.privacy-notice-content i {
+    color: #07553B;
+    font-size: 1.5rem;
+    margin-top: 2px;
+    flex-shrink: 0;
+}
+
+.privacy-notice-content p {
+    margin: 0 0 10px 0;
+    color: #1a1a1a;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+.privacy-notice .privacy-link {
+    color: #07553B;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.privacy-notice .privacy-link:hover {
+    color: #0d7a5a;
+    text-decoration: underline;
+}
+
+.privacy-notice .privacy-link::after {
+    content: '→';
+    transition: transform 0.3s ease;
+}
+
+.privacy-notice .privacy-link:hover::after {
+    transform: translateX(3px);
+}
+
+/* App Functionality Section */
+.app-functionality {
+    padding: 80px 0;
+    background: #ffffff;
+}
+
+.functionality-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.functionality-card {
+    background: #f8fafc;
+    padding: 2rem;
+    border-radius: 12px;
+    border: 1px solid #e5e7eb;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.functionality-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(135deg, #07553B 0%, #0d7a5a 100%);
+}
+
+.functionality-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    border-color: #07553B;
+}
+
+.functionality-icon {
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, #07553B 0%, #0d7a5a 100%);
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+.functionality-icon i {
+    color: white;
+    font-size: 1.5rem;
+}
+
+.functionality-card h3 {
+    color: #07553B;
+    font-size: 1.3rem;
+    margin-bottom: 1rem;
+    font-weight: 600;
+}
+
+.functionality-card p {
+    color: #4b5563;
+    line-height: 1.6;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+    .functionality-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .functionality-card {
+        padding: 1.5rem;
+    }
+}
