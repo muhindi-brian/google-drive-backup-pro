@@ -3,16 +3,22 @@ const nodemailer = require('nodemailer');
 const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+const { configureStaticFiles, configureSecurityHeaders, configureErrorHandling } = require('./deploy-config');
 require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-// Middleware
+// Enhanced middleware configuration
 app.use(cors());
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-app.use(express.static('.'));
+
+// Configure security headers
+configureSecurityHeaders(app);
+
+// Enhanced static file serving
+configureStaticFiles(app);
 
 // Gmail SMTP Configuration
 const transporter = nodemailer.createTransport({
@@ -171,8 +177,13 @@ app.get('/about', (req, res) => {
     res.sendFile(path.join(__dirname, 'about.html'));
 });
 
+// Configure error handling
+configureErrorHandling(app);
+
 // Start server
 app.listen(PORT, () => {
-    console.log(`Server is running on http://localhost:${PORT}`);
-    console.log('Contact form endpoint: POST /api/contact');
+    console.log(`🚀 DriveBackup Pro server is running on http://localhost:${PORT}`);
+    console.log('📧 Contact form endpoint: POST /api/contact');
+    console.log('📁 Static files are being served from the current directory');
+    console.log('🔒 Security headers and CORS are configured');
 });
