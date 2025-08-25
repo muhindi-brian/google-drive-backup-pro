@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Documentation - Google Drive Backup Tool</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-cloud-download-alt"></i>
+                <span>DriveBackup Pro</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="features">Features</a></li>
+                <li><a href="download">Download</a></li>
+                <li><a href="docs" class="active">Documentation</a></li>
+                <li><a href="support">Support</a></li>
+                <li><a href="about">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero docs-hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1>Documentation</h1>
+                <p>Everything you need to get started with DriveBackup Pro</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Navigation -->
+    <section class="docs-nav">
+        <div class="container">
+            <div class="docs-tabs">
+                <a href="#quick-start" class="docs-tab active">Quick Start</a>
+                <a href="#configuration" class="docs-tab">Configuration</a>
+                <a href="#tutorials" class="docs-tab">Tutorials</a>
+                <a href="#api-reference" class="docs-tab">API Reference</a>
+                <a href="#faq" class="docs-tab">FAQ</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Start Guide -->
+    <section id="quick-start" class="docs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Quick Start Guide</h2>
+                <p>Get up and running in 5 minutes</p>
+            </div>
+            
+            <div class="docs-content">
+                <div class="step-guide">
+                    <div class="step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h3>Download and Extract</h3>
+                            <p>Download the latest version from our <a href="download">download page</a> and extract the ZIP file to a folder of your choice.</p>
+                            <div class="code-block">
+                                <code>GoogleDriveBackupTool.exe</code>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h3>Run the Application</h3>
+                            <p>Double-click the executable file to launch DriveBackup Pro. The application will open with a modern, intuitive interface.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h3>Authenticate with Google</h3>
+                            <p>Click the "Authenticate" button in the Settings tab. This will open your browser for OAuth2 authentication with Google.</p>
+                            <div class="note">
+                                <strong>Note:</strong> You'll need to grant permissions to access your Google Drive account.
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h3>Configure Backup Settings</h3>
+                            <p>In the Backup tab, select which drives to backup (My Drive, Shared Drives) and choose your conversion preferences.</p>
+                        </div>
+                    </div>
+
+                    <div class="step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h3>Start Your First Backup</h3>
+                            <p>Click "Start Backup" and watch as your files are downloaded and converted automatically. Monitor progress in real-time.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Configuration Guide -->
+    <section id="configuration" class="docs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Configuration Guide</h2>
+                <p>Learn how to configure Google API credentials and customize settings</p>
+            </div>
+            
+            <div class="docs-content">
+                <div class="config-section">
+                    <h3>Google API Setup</h3>
+                    <p>To use DriveBackup Pro, you need to set up Google API credentials:</p>
+                    
+                    <div class="config-steps">
+                        <h4>1. Create a Google Cloud Project</h4>
+                        <ol>
+                            <li>Go to <a href="https://console.cloud.google.com/" target="_blank">Google Cloud Console</a></li>
+                            <li>Create a new project or select an existing one</li>
+                            <li>Enable the Google Drive API</li>
+                        </ol>
+
+                        <h4>2. Create OAuth2 Credentials</h4>
+                        <ol>
+                            <li>Navigate to "APIs & Services" > "Credentials"</li>
+                            <li>Click "Create Credentials" > "OAuth 2.0 Client IDs"</li>
+                            <li>Choose "Desktop application" as the application type</li>
+                            <li>Download the credentials file as <code>credentials.json</code></li>
+                        </ol>
+
+                        <h4>3. Configure Redirect URIs</h4>
+                        <p>Add these redirect URIs to your OAuth2 client:</p>
+                        <div class="code-block">
+                            <code>http://localhost:8080/</code><br>
+                            <code>http://127.0.0.1:8080/</code>
+                        </div>
+                    </div>
+
+                    <div class="config-section">
+                        <h3>Application Settings</h3>
+                        <div class="settings-grid">
+                            <div class="setting-item">
+                                <h4>Backup Location</h4>
+                                <p>Choose where to store your backup files. Default is a "GoogleDrive_Backup" folder in the application directory.</p>
+                            </div>
+                            <div class="setting-item">
+                                <h4>File Conversion</h4>
+                                <p>Select which Google Workspace files to convert and their target formats (Word, Excel, PowerPoint, PDF).</p>
+                            </div>
+                            <div class="setting-item">
+                                <h4>Incremental Backup</h4>
+                                <p>Enable to skip already downloaded files, making subsequent backups faster.</p>
+                            </div>
+                            <div class="setting-item">
+                                <h4>Retry Settings</h4>
+                                <p>Configure how many times to retry failed downloads and the delay between attempts.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tutorials -->
+    <section id="tutorials" class="docs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Video Tutorials</h2>
+                <p>Step-by-step video guides for all features</p>
+            </div>
+            
+            <div class="tutorials-grid">
+                <div class="tutorial-card">
+                    <div class="tutorial-thumbnail">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Getting Started</h3>
+                        <p>Complete setup guide from download to first backup</p>
+                        <span class="tutorial-duration">5:23</span>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-thumbnail">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Google API Setup</h3>
+                        <p>How to configure Google Cloud Console and OAuth2</p>
+                        <span class="tutorial-duration">8:45</span>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-thumbnail">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Advanced Configuration</h3>
+                        <p>Customizing backup settings and preferences</p>
+                        <span class="tutorial-duration">12:17</span>
+                    </div>
+                </div>
+
+                <div class="tutorial-card">
+                    <div class="tutorial-thumbnail">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="tutorial-content">
+                        <h3>Troubleshooting</h3>
+                        <p>Common issues and how to resolve them</p>
+                        <span class="tutorial-duration">6:52</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- API Reference -->
+    <section id="api-reference" class="docs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>API Reference</h2>
+                <p>Technical documentation for developers</p>
+            </div>
+            
+            <div class="docs-content">
+                <div class="api-section">
+                    <h3>Core Functions</h3>
+                    
+                    <div class="api-function">
+                        <h4>authenticate()</h4>
+                        <p>Authenticates with Google Drive using OAuth2</p>
+                        <div class="code-block">
+                            <code>def authenticate():<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"""Authenticate with Google Drive API"""<br>
+&nbsp;&nbsp;&nbsp;&nbsp;flow = InstalledAppFlow.from_client_secrets_file(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;'credentials.json', SCOPES)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;credentials = flow.run_local_server(port=8080)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;return build('drive', 'v3', credentials=credentials)</code>
+                        </div>
+                    </div>
+
+                    <div class="api-function">
+                        <h4>download_folder(folder_id, local_path)</h4>
+                        <p>Downloads all files and subfolders from a Google Drive folder</p>
+                        <div class="code-block">
+                            <code>def download_folder(folder_id, local_path):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"""Download entire folder structure"""<br>
+&nbsp;&nbsp;&nbsp;&nbsp;files = service.files().list(<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;q=f"'{folder_id}' in parents",<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;fields="files(id,name,mimeType,size)").execute()</code>
+                        </div>
+                    </div>
+
+                    <div class="api-function">
+                        <h4>download_file(file_id, local_path)</h4>
+                        <p>Downloads a single file with format conversion support</p>
+                        <div class="code-block">
+                            <code>def download_file(file_id, local_path):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;"""Download single file with conversion"""<br>
+&nbsp;&nbsp;&nbsp;&nbsp;if is_google_workspace_file(mime_type):<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return export_google_workspace_file(file_id, local_path)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;else:<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return download_regular_file(file_id, local_path)</code>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="api-section">
+                    <h3>Configuration Options</h3>
+                    <div class="config-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>Option</th>
+                                    <th>Type</th>
+                                    <th>Default</th>
+                                    <th>Description</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>backup_my_drive</td>
+                                    <td>boolean</td>
+                                    <td>True</td>
+                                    <td>Include My Drive in backup</td>
+                                </tr>
+                                <tr>
+                                    <td>backup_shared_drives</td>
+                                    <td>boolean</td>
+                                    <td>True</td>
+                                    <td>Include shared drives in backup</td>
+                                </tr>
+                                <tr>
+                                    <td>convert_docs</td>
+                                    <td>boolean</td>
+                                    <td>True</td>
+                                    <td>Convert Google Docs to Word</td>
+                                </tr>
+                                <tr>
+                                    <td>convert_sheets</td>
+                                    <td>boolean</td>
+                                    <td>True</td>
+                                    <td>Convert Google Sheets to Excel</td>
+                                </tr>
+                                <tr>
+                                    <td>convert_slides</td>
+                                    <td>boolean</td>
+                                    <td>True</td>
+                                    <td>Convert Google Slides to PowerPoint</td>
+                                </tr>
+                                <tr>
+                                    <td>skip_existing</td>
+                                    <td>boolean</td>
+                                    <td>True</td>
+                                    <td>Skip files that already exist</td>
+                                </tr>
+                                <tr>
+                                    <td>retry_count</td>
+                                    <td>integer</td>
+                                    <td>3</td>
+                                    <td>Number of retry attempts</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section id="faq" class="docs-section">
+        <div class="container">
+            <div class="section-header">
+                <h2>Frequently Asked Questions</h2>
+                <p>Common questions and troubleshooting solutions</p>
+            </div>
+            
+            <div class="faq-list-detailed">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I set up Google API credentials?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Follow our <a href="#configuration">Configuration Guide</a> for step-by-step instructions. You'll need to create a Google Cloud project, enable the Drive API, and create OAuth2 credentials.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What file formats are supported for conversion?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>We support converting Google Docs to Word (.docx), Google Sheets to Excel (.xlsx), and Google Slides to PowerPoint (.pptx). PDF export is also available for all formats.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How does incremental backup work?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Incremental backup compares file sizes and modification dates to skip files that haven't changed. This saves time and bandwidth for subsequent backups.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Can I backup shared drives?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes! DriveBackup Pro supports backing up all shared drives you have access to. Simply enable the "Shared Drives" option in the backup settings.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>What if the backup gets interrupted?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>You can resume interrupted backups by running the application again. It will automatically skip files that were already downloaded successfully.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I handle large files?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>The application handles large files automatically with progress tracking and retry logic. For very large files, ensure you have a stable internet connection.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-cloud-download-alt"></i>
+                        <span>DriveBackup Pro</span>
+                    </div>
+                    <p>Professional Google Drive backup solution for individuals and businesses.</p>
+                    <p><strong>By Mojok Dev ke. Solutions</strong></p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@mojokgroup.xyz</p>
+                        <p><i class="fas fa-phone"></i> +254798564925</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features">Features</a></li>
+                        <li><a href="download">Download</a></li>
+                        <li><a href="docs">Documentation</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="support">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy">Privacy Policy</a></li>
+                        <li><a href="terms-of-service">Terms of Service</a></li>
+                        <li><a href="#">License</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DriveBackup Pro by Mojok Dev ke. Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

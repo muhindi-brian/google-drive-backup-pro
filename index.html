@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Drive Backup Tool - Professional Backup Solution</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <i class="fas fa-cloud-download-alt"></i>
+                <span>DriveBackup Pro</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="/">Home</a></li>
+                <li><a href="features">Features</a></li>
+                <li><a href="download">Download</a></li>
+                <li><a href="docs">Documentation</a></li>
+                <li><a href="support">Support</a></li>
+                <li><a href="about">About</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Professional Google Drive Backup Solution</h1>
+                <p>Secure, fast, and comprehensive backup tool for your Google Drive files. Download, convert, and organize your cloud storage with ease.</p>
+                <div class="hero-buttons">
+                    <a href="download" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download Now
+                    </a>
+                    <a href="features" class="btn btn-secondary">
+                        <i class="fas fa-play"></i>
+                        Watch Demo
+                    </a>
+                </div>
+                <div class="hero-stats">
+                    <div class="stat">
+                        <span class="stat-number">10K+</span>
+                        <span class="stat-label">Downloads</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">99.9%</span>
+                        <span class="stat-label">Success Rate</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">24/7</span>
+                        <span class="stat-label">Support</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="app-preview">
+                    <div class="app-window">
+                        <div class="app-header">
+                            <div class="app-buttons">
+                                <span class="btn-red"></span>
+                                <span class="btn-yellow"></span>
+                                <span class="btn-green"></span>
+                            </div>
+                            <span class="app-title">Google Drive Backup Tool</span>
+                        </div>
+                        <div class="app-content">
+                            <div class="tab-bar">
+                                <span class="tab active">Backup</span>
+                                <span class="tab">Settings</span>
+                                <span class="tab">Reports</span>
+                            </div>
+                            <div class="app-body">
+                                <div class="progress-section">
+                                    <div class="progress-bar">
+                                        <div class="progress-fill" style="width: 75%"></div>
+                                    </div>
+                                    <p>Backing up files... 75% complete</p>
+                                </div>
+                                <div class="file-list">
+                                    <div class="file-item">
+                                        <i class="fas fa-file-word"></i>
+                                        <span>Document.docx</span>
+                                        <span class="status success">✓</span>
+                                    </div>
+                                    <div class="file-item">
+                                        <i class="fas fa-file-excel"></i>
+                                        <span>Spreadsheet.xlsx</span>
+                                        <span class="status success">✓</span>
+                                    </div>
+                                    <div class="file-item">
+                                        <i class="fas fa-file-powerpoint"></i>
+                                        <span>Presentation.pptx</span>
+                                        <span class="status downloading">⟳</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features">
+        <div class="container">
+            <div class="section-header">
+                <h2>Powerful Features</h2>
+                <p>Everything you need for comprehensive Google Drive backup</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Complete Drive Backup</h3>
+                    <p>Backup your entire Google Drive including My Drive and all shared drives with a single click.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-exchange-alt"></i>
+                    </div>
+                    <h3>Format Conversion</h3>
+                    <p>Automatically convert Google Docs, Sheets, and Slides to Microsoft Office formats (Word, Excel, PowerPoint).</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-sync"></i>
+                    </div>
+                    <h3>Incremental Backup</h3>
+                    <p>Smart detection skips already downloaded files, making subsequent backups lightning fast.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Secure Authentication</h3>
+                    <p>OAuth2 authentication ensures your data remains secure and private throughout the backup process.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-desktop"></i>
+                    </div>
+                    <h3>Modern UI</h3>
+                    <p>Intuitive graphical interface with real-time progress tracking and detailed activity logs.</p>
+                </div>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Standalone Executable</h3>
+                    <p>No installation required. Run directly from the executable file on any Windows machine.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section id="download" class="download">
+        <div class="container">
+            <div class="section-header">
+                <h2>Download Now</h2>
+                <p>Get started with your Google Drive backup in minutes</p>
+            </div>
+            <div class="download-options">
+                <div class="download-card">
+                    <div class="download-header">
+                        <i class="fas fa-windows"></i>
+                        <h3>Windows Executable</h3>
+                    </div>
+                    <div class="download-info">
+                        <p>Standalone application - no installation required</p>
+                        <ul>
+                            <li>✓ Windows 10/11 compatible</li>
+                            <li>✓ 52MB download size</li>
+                            <li>✓ No dependencies</li>
+                            <li>✓ Portable version</li>
+                        </ul>
+                    </div>
+                    <div class="download-actions">
+                        <a href="download" class="btn btn-primary btn-large">
+                            <i class="fas fa-download"></i>
+                            Download EXE (52MB)
+                        </a>
+                        <small>Version 1.0.0 - Updated Dec 2024</small>
+                    </div>
+                </div>
+                <div class="download-card">
+                    <div class="download-header">
+                        <i class="fas fa-code"></i>
+                        <h3>Source Code</h3>
+                    </div>
+                    <div class="download-info">
+                        <p>Python source code for developers</p>
+                        <ul>
+                            <li>✓ Full source code</li>
+                            <li>✓ Customizable</li>
+                            <li>✓ Cross-platform</li>
+                            <li>✓ MIT License</li>
+                        </ul>
+                    </div>
+                    <div class="download-actions">
+                        <a href="download" class="btn btn-secondary btn-large">
+                            <i class="fab fa-github"></i>
+                            View on GitHub
+                        </a>
+                        <small>Open source project</small>
+                    </div>
+                </div>
+            </div>
+            <div class="system-requirements">
+                <h3>System Requirements</h3>
+                <div class="requirements-grid">
+                    <div class="requirement">
+                        <i class="fas fa-desktop"></i>
+                        <span>Windows 10 or later</span>
+                    </div>
+                    <div class="requirement">
+                        <i class="fas fa-memory"></i>
+                        <span>4GB RAM minimum</span>
+                    </div>
+                    <div class="requirement">
+                        <i class="fas fa-hdd"></i>
+                        <span>100MB free space</span>
+                    </div>
+                    <div class="requirement">
+                        <i class="fas fa-wifi"></i>
+                        <span>Internet connection</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Documentation Section -->
+    <section id="docs" class="documentation">
+        <div class="container">
+            <div class="section-header">
+                <h2>Documentation</h2>
+                <p>Everything you need to get started</p>
+            </div>
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Quick Start Guide</h3>
+                    <p>Get up and running in 5 minutes with our step-by-step guide.</p>
+                                            <a href="docs.html#quick-start" class="doc-link">Read Guide →</a>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-cog"></i>
+                    </div>
+                    <h3>Configuration</h3>
+                    <p>Learn how to configure Google API credentials and authentication.</p>
+                                            <a href="docs.html#configuration" class="doc-link">Configure →</a>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-question-circle"></i>
+                    </div>
+                    <h3>FAQ</h3>
+                    <p>Common questions and troubleshooting solutions.</p>
+                                            <a href="docs.html#faq" class="doc-link">View FAQ →</a>
+                </div>
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-video"></i>
+                    </div>
+                    <h3>Video Tutorials</h3>
+                    <p>Watch step-by-step video guides for all features.</p>
+                                            <a href="docs.html#tutorials" class="doc-link">Watch Videos →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Support Section -->
+    <section id="support" class="support">
+        <div class="container">
+            <div class="section-header">
+                <h2>Support & Community</h2>
+                <p>We're here to help you succeed</p>
+            </div>
+            <div class="support-grid">
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Community Forum</h3>
+                    <p>Connect with other users, share tips, and get help from the community.</p>
+                                            <a href="support" class="btn btn-outline">Join Forum</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <h3>Email Support</h3>
+                    <p>Get direct support from our team for technical issues and questions.</p>
+                    <a href="mailto:info@mojokgroup.xyz" class="btn btn-outline">Contact Us</a>
+                </div>
+                <div class="support-card">
+                    <div class="support-icon">
+                        <i class="fab fa-github"></i>
+                    </div>
+                    <h3>GitHub Issues</h3>
+                    <p>Report bugs, request features, and contribute to the project.</p>
+                                            <a href="support" class="btn btn-outline">View Issues</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-logo">
+                        <i class="fas fa-cloud-download-alt"></i>
+                        <span>DriveBackup Pro</span>
+                    </div>
+                    <p>Professional Google Drive backup solution for individuals and businesses.</p>
+                    <p><strong>By Mojok Dev ke. Solutions</strong></p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-envelope"></i> info@mojokgroup.xyz</p>
+                        <p><i class="fas fa-phone"></i> +254798564925</p>
+                    </div>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h4>Product</h4>
+                    <ul>
+                        <li><a href="features">Features</a></li>
+                        <li><a href="download">Download</a></li>
+                        <li><a href="docs">Documentation</a></li>
+                        <li><a href="#">Changelog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="support">Help Center</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="privacy-policy">Privacy Policy</a></li>
+                        <li><a href="terms-of-service">Terms of Service</a></li>
+                        <li><a href="#">License</a></li>
+                        <li><a href="#">Security</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 DriveBackup Pro by Mojok Dev ke. Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
