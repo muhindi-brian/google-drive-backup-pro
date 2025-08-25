@@ -29,16 +29,100 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Navbar background change on scroll
+// Enhanced Navbar scroll effect
 window.addEventListener('scroll', () => {
     const navbar = document.querySelector('.navbar');
-    if (window.scrollY > 100) {
-        navbar.style.background = 'rgba(255, 255, 255, 0.98)';
-        navbar.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+    if (window.scrollY > 50) {
+        navbar.classList.add('scrolled');
     } else {
-        navbar.style.background = 'rgba(255, 255, 255, 0.95)';
-        navbar.style.boxShadow = 'none';
+        navbar.classList.remove('scrolled');
     }
+});
+
+// Active navigation link highlighting
+function setActiveNavLink() {
+    const currentPath = window.location.pathname;
+    const navLinks = document.querySelectorAll('.nav-menu a');
+    
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        const linkPath = link.getAttribute('href');
+        
+        // Handle home page
+        if (currentPath === '/' && linkPath === '/') {
+            link.classList.add('active');
+        }
+        // Handle other pages
+        else if (currentPath.includes(linkPath) && linkPath !== '/') {
+            link.classList.add('active');
+        }
+    });
+}
+
+// Set active nav link on page load
+document.addEventListener('DOMContentLoaded', () => {
+    setActiveNavLink();
+    
+    // Add loading animation to navbar
+    const navbar = document.querySelector('.navbar');
+    navbar.style.opacity = '0';
+    navbar.style.transform = 'translateY(-20px)';
+    
+    setTimeout(() => {
+        navbar.style.transition = 'all 0.6s ease';
+        navbar.style.opacity = '1';
+        navbar.style.transform = 'translateY(0)';
+    }, 100);
+    
+    // Dropdown functionality
+    const dropdowns = document.querySelectorAll('.dropdown');
+    
+    dropdowns.forEach(dropdown => {
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        const menu = dropdown.querySelector('.dropdown-menu');
+        
+        // Desktop hover functionality
+        if (window.innerWidth > 768) {
+            dropdown.addEventListener('mouseenter', () => {
+                menu.style.opacity = '1';
+                menu.style.visibility = 'visible';
+                menu.style.transform = 'translateX(-50%) translateY(0)';
+            });
+            
+            dropdown.addEventListener('mouseleave', () => {
+                menu.style.opacity = '0';
+                menu.style.visibility = 'hidden';
+                menu.style.transform = 'translateX(-50%) translateY(-10px)';
+            });
+        }
+        
+        // Mobile click functionality
+        if (window.innerWidth <= 768) {
+            toggle.addEventListener('click', (e) => {
+                e.preventDefault();
+                dropdown.classList.toggle('active');
+                
+                if (dropdown.classList.contains('active')) {
+                    menu.style.display = 'block';
+                } else {
+                    menu.style.display = 'none';
+                }
+            });
+        }
+    });
+    
+    // Close dropdowns when clicking outside
+    document.addEventListener('click', (e) => {
+        if (!e.target.closest('.dropdown')) {
+            dropdowns.forEach(dropdown => {
+                dropdown.classList.remove('active');
+                const menu = dropdown.querySelector('.dropdown-menu');
+                if (window.innerWidth <= 768) {
+                    menu.style.display = 'none';
+                }
+            });
+        }
+    });
 });
 
 // Intersection Observer for animations
