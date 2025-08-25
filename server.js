@@ -3,6 +3,7 @@ const nodemailer = require('nodemailer');
 const path = require('path');
 const cors = require('cors');
 const bodyParser = require('body-parser');
+require('dotenv').config();
 
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -17,8 +18,8 @@ app.use(express.static('.'));
 const transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-        user: 'devverge.254@gmail.com',
-        pass: 'kgie ntnq dudx ywvg'
+        user: process.env.GMAIL_USER,
+        pass: process.env.GMAIL_PASS
     }
 });
 
@@ -77,8 +78,8 @@ app.post('/api/contact', async (req, res) => {
 
         // Email options
         const mailOptions = {
-            from: '"DriveBackup Pro by Mojok Dev Ke. Solutions" <drive@mojokgroup.xyz>',
-            to: 'drive@mojokgroup.xyz',
+            from: `"${process.env.COMPANY_NAME}" <${process.env.SUPPORT_EMAIL}>`,
+            to: process.env.SUPPORT_EMAIL,
             subject: `[DriveBackup Pro Support] ${subject}`,
             html: createEmailTemplate({ name, email, subject, message, priority })
         };
@@ -88,7 +89,7 @@ app.post('/api/contact', async (req, res) => {
 
         // Send confirmation email to user
         const userMailOptions = {
-            from: '"DriveBackup Pro Support" <drive@mojokgroup.xyz>',
+            from: `"${process.env.COMPANY_NAME}" <${process.env.SUPPORT_EMAIL}>`,
             to: email,
             subject: 'Thank you for contacting DriveBackup Pro Support',
             html: `
@@ -112,7 +113,7 @@ app.post('/api/contact', async (req, res) => {
                         <p>Our support team typically responds within 24 hours. If you have an urgent issue, you can also reach us at:</p>
                         
                         <ul style="color: #6b7280;">
-                            <li>Email: drive@mojokgroup.xyz</li>
+                            <li>Email: ${process.env.SUPPORT_EMAIL}</li>
                             <li>Phone: +254798564925</li>
                         </ul>
                         
