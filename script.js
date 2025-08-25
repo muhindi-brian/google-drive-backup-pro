@@ -58,7 +58,7 @@ const observer = new IntersectionObserver((entries) => {
 
 // Observe elements for animation
 document.addEventListener('DOMContentLoaded', () => {
-    const animatedElements = document.querySelectorAll('.feature-card, .download-card, .doc-card, .support-card');
+    const animatedElements = document.querySelectorAll('.feature-card, .download-card, .doc-card, .support-card, .step-card');
     
     animatedElements.forEach(el => {
         el.style.opacity = '0';
@@ -92,7 +92,6 @@ window.addEventListener('load', () => {
 // Tab switching in app preview
 document.addEventListener('DOMContentLoaded', () => {
     const tabs = document.querySelectorAll('.tab');
-    const tabContents = document.querySelectorAll('.app-content');
     
     tabs.forEach(tab => {
         tab.addEventListener('click', () => {
@@ -168,23 +167,6 @@ if (statsSection) {
     statsObserver.observe(statsSection);
 }
 
-// Form validation for contact form (if added later)
-function validateForm(form) {
-    const inputs = form.querySelectorAll('input[required], textarea[required]');
-    let isValid = true;
-    
-    inputs.forEach(input => {
-        if (!input.value.trim()) {
-            input.style.borderColor = '#ef4444';
-            isValid = false;
-        } else {
-            input.style.borderColor = '#10b981';
-        }
-    });
-    
-    return isValid;
-}
-
 // Add loading states to buttons
 document.addEventListener('DOMContentLoaded', () => {
     const buttons = document.querySelectorAll('.btn');
@@ -205,16 +187,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Parallax effect for hero section
-window.addEventListener('scroll', () => {
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        const rate = scrolled * -0.5;
-        hero.style.transform = `translateY(${rate}px)`;
-    }
-});
-
 // Add hover effects to feature cards
 document.addEventListener('DOMContentLoaded', () => {
     const featureCards = document.querySelectorAll('.feature-card');
@@ -230,29 +202,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 });
 
-// Add typing effect to hero title (optional)
-function typeWriter(element, text, speed = 100) {
-    let i = 0;
-    element.innerHTML = '';
-    
-    function type() {
-        if (i < text.length) {
-            element.innerHTML += text.charAt(i);
-            i++;
-            setTimeout(type, speed);
-        }
-    }
-    
-    type();
-}
-
-// Initialize typing effect if desired
-// const heroTitle = document.querySelector('.hero-content h1');
-// if (heroTitle) {
-//     const originalText = heroTitle.textContent;
-//     typeWriter(heroTitle, originalText, 50);
-// }
-
 // Add scroll-to-top functionality
 function createScrollToTop() {
     const scrollButton = document.createElement('button');
@@ -264,7 +213,7 @@ function createScrollToTop() {
         right: 20px;
         width: 50px;
         height: 50px;
-        background: #2563eb;
+        background: #07553B;
         color: white;
         border: none;
         border-radius: 50%;
@@ -273,7 +222,7 @@ function createScrollToTop() {
         visibility: hidden;
         transition: all 0.3s ease;
         z-index: 1000;
-        box-shadow: 0 4px 12px rgba(37, 99, 235, 0.3);
+        box-shadow: 0 4px 12px rgba(7, 85, 59, 0.3);
     `;
     
     document.body.appendChild(scrollButton);
@@ -343,59 +292,9 @@ const debouncedScrollHandler = debounce(() => {
         navbar.style.background = 'rgba(255, 255, 255, 0.95)';
         navbar.style.boxShadow = 'none';
     }
-    
-    // Parallax effect
-    const scrolled = window.pageYOffset;
-    const hero = document.querySelector('.hero');
-    if (hero) {
-        const rate = scrolled * -0.5;
-        hero.style.transform = `translateY(${rate}px)`;
-    }
 }, 10);
 
 window.addEventListener('scroll', debouncedScrollHandler);
-
-// Add preloader (optional)
-function createPreloader() {
-    const preloader = document.createElement('div');
-    preloader.id = 'preloader';
-    preloader.style.cssText = `
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%;
-        background: #2563eb;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        z-index: 9999;
-        transition: opacity 0.5s ease;
-    `;
-    
-    preloader.innerHTML = `
-        <div style="text-align: center; color: white;">
-            <i class="fas fa-cloud-download-alt" style="font-size: 3rem; margin-bottom: 1rem;"></i>
-            <h2>DriveBackup Pro</h2>
-            <p>Loading...</p>
-        </div>
-    `;
-    
-    document.body.appendChild(preloader);
-    
-    // Hide preloader after page loads
-    window.addEventListener('load', () => {
-        setTimeout(() => {
-            preloader.style.opacity = '0';
-            setTimeout(() => {
-                preloader.remove();
-            }, 500);
-        }, 1000);
-    });
-}
-
-// Initialize preloader
-createPreloader();
 
 // FAQ Toggle Functionality
 document.addEventListener('DOMContentLoaded', () => {
@@ -417,32 +316,6 @@ document.addEventListener('DOMContentLoaded', () => {
             if (!isActive) {
                 item.classList.add('active');
             }
-        });
-    });
-});
-
-// Documentation Tab Navigation
-document.addEventListener('DOMContentLoaded', () => {
-    const docsTabs = document.querySelectorAll('.docs-tab');
-    const docsSections = document.querySelectorAll('.docs-section');
-    
-    docsTabs.forEach(tab => {
-        tab.addEventListener('click', (e) => {
-            e.preventDefault();
-            
-            // Remove active class from all tabs
-            docsTabs.forEach(t => t.classList.remove('active'));
-            
-            // Add active class to clicked tab
-            tab.classList.add('active');
-            
-            // Show corresponding section
-            const targetId = tab.getAttribute('href').substring(1);
-            docsSections.forEach(section => {
-                if (section.id === targetId) {
-                    section.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
         });
     });
 });

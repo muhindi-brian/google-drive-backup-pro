@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Google Drive Backup Tool - Professional Backup Solution</title>
+    <title>DriveBackup Pro - Professional Google Drive Backup Solution</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,6 +24,9 @@
                 <li><a href="support">Support</a></li>
                 <li><a href="about">About</a></li>
             </ul>
+            <div class="nav-actions">
+                <a href="download" class="btn btn-primary">Get Started</a>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -33,19 +36,22 @@
     </nav>
 
     <!-- Hero Section -->
-    <section id="home" class="hero">
+    <section class="hero">
         <div class="hero-container">
             <div class="hero-content">
-                <h1>Professional Google Drive Backup Solution</h1>
-                <p>Secure, fast, and comprehensive backup tool for your Google Drive files. Download, convert, and organize your cloud storage with ease.</p>
+                <div class="hero-badge">
+                    <span>Professional Google Drive Backup Solution</span>
+                </div>
+                <h1>The Complete Backup Platform<br>for Google Drive</h1>
+                <p class="hero-subtitle">Secure, fast, and comprehensive backup tool for your Google Drive files. Download, convert, and organize your cloud storage with enterprise-grade reliability.</p>
                 <div class="hero-buttons">
-                    <a href="download" class="btn btn-primary">
+                    <a href="download" class="btn btn-primary btn-large">
                         <i class="fas fa-download"></i>
                         Download Now
                     </a>
-                    <a href="features" class="btn btn-secondary">
+                    <a href="features" class="btn btn-secondary btn-large">
                         <i class="fas fa-play"></i>
-                        Watch Demo
+                        See How It Works
                     </a>
                 </div>
                 <div class="hero-stats">
@@ -63,7 +69,7 @@
                     </div>
                 </div>
             </div>
-            <div class="hero-image">
+            <div class="hero-visual">
                 <div class="app-preview">
                     <div class="app-window">
                         <div class="app-header">
@@ -72,7 +78,7 @@
                                 <span class="btn-yellow"></span>
                                 <span class="btn-green"></span>
                             </div>
-                            <span class="app-title">Google Drive Backup Tool</span>
+                            <span class="app-title">DriveBackup Pro</span>
                         </div>
                         <div class="app-content">
                             <div class="tab-bar">
@@ -112,12 +118,37 @@
         </div>
     </section>
 
+    <!-- Trusted By Section -->
+    <section class="trusted-by">
+        <div class="container">
+            <p class="trusted-label">Trusted by developers and businesses worldwide</p>
+            <div class="trusted-logos">
+                <div class="logo-item">
+                    <i class="fas fa-building"></i>
+                    <span>Enterprise</span>
+                </div>
+                <div class="logo-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Education</span>
+                </div>
+                <div class="logo-item">
+                    <i class="fas fa-chart-line"></i>
+                    <span>Business</span>
+                </div>
+                <div class="logo-item">
+                    <i class="fas fa-users"></i>
+                    <span>Teams</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Features Section -->
-    <section id="features" class="features">
+    <section class="features">
         <div class="container">
             <div class="section-header">
-                <h2>Powerful Features</h2>
-                <p>Everything you need for comprehensive Google Drive backup</p>
+                <h2>Everything you need for comprehensive Google Drive backup</h2>
+                <p>Powerful features designed to make your backup process seamless and secure</p>
             </div>
             <div class="features-grid">
                 <div class="feature-card">
@@ -166,15 +197,43 @@
         </div>
     </section>
 
-    <!-- Download Section -->
-    <section id="download" class="download">
+    <!-- How It Works Section -->
+    <section class="how-it-works">
         <div class="container">
             <div class="section-header">
-                <h2>Download Now</h2>
-                <p>Get started with your Google Drive backup in minutes</p>
+                <h2>Get started in minutes</h2>
+                <p>Simple setup process to get your Google Drive backup running</p>
+            </div>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">1</div>
+                    <h3>Download & Install</h3>
+                    <p>Download the standalone executable and run it on your Windows machine. No complex installation required.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">2</div>
+                    <h3>Authenticate with Google</h3>
+                    <p>Connect your Google account using secure OAuth2 authentication. We only request read access to your Drive.</p>
+                </div>
+                <div class="step-card">
+                    <div class="step-number">3</div>
+                    <h3>Start Backup</h3>
+                    <p>Select your backup options and start the process. Monitor progress in real-time with detailed logs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Download Section -->
+    <section class="download">
+        <div class="container">
+            <div class="section-header">
+                <h2>Ready to get started?</h2>
+                <p>Download DriveBackup Pro and start backing up your Google Drive today</p>
             </div>
             <div class="download-options">
-                <div class="download-card">
+                <div class="download-card featured">
+                    <div class="download-badge">Recommended</div>
                     <div class="download-header">
                         <i class="fas fa-windows"></i>
                         <h3>Windows Executable</h3>
@@ -219,36 +278,15 @@
                     </div>
                 </div>
             </div>
-            <div class="system-requirements">
-                <h3>System Requirements</h3>
-                <div class="requirements-grid">
-                    <div class="requirement">
-                        <i class="fas fa-desktop"></i>
-                        <span>Windows 10 or later</span>
-                    </div>
-                    <div class="requirement">
-                        <i class="fas fa-memory"></i>
-                        <span>4GB RAM minimum</span>
-                    </div>
-                    <div class="requirement">
-                        <i class="fas fa-hdd"></i>
-                        <span>100MB free space</span>
-                    </div>
-                    <div class="requirement">
-                        <i class="fas fa-wifi"></i>
-                        <span>Internet connection</span>
-                    </div>
-                </div>
-            </div>
         </div>
     </section>
 
     <!-- Documentation Section -->
-    <section id="docs" class="documentation">
+    <section class="documentation">
         <div class="container">
             <div class="section-header">
-                <h2>Documentation</h2>
-                <p>Everything you need to get started</p>
+                <h2>Learn how to use DriveBackup Pro</h2>
+                <p>Comprehensive documentation to help you get the most out of your backup solution</p>
             </div>
             <div class="docs-grid">
                 <div class="doc-card">
@@ -257,7 +295,7 @@
                     </div>
                     <h3>Quick Start Guide</h3>
                     <p>Get up and running in 5 minutes with our step-by-step guide.</p>
-                                            <a href="docs.html#quick-start" class="doc-link">Read Guide →</a>
+                    <a href="docs.html#quick-start" class="doc-link">Read Guide →</a>
                 </div>
                 <div class="doc-card">
                     <div class="doc-icon">
@@ -265,7 +303,7 @@
                     </div>
                     <h3>Configuration</h3>
                     <p>Learn how to configure Google API credentials and authentication.</p>
-                                            <a href="docs.html#configuration" class="doc-link">Configure →</a>
+                    <a href="docs.html#configuration" class="doc-link">Configure →</a>
                 </div>
                 <div class="doc-card">
                     <div class="doc-icon">
@@ -273,7 +311,7 @@
                     </div>
                     <h3>FAQ</h3>
                     <p>Common questions and troubleshooting solutions.</p>
-                                            <a href="docs.html#faq" class="doc-link">View FAQ →</a>
+                    <a href="docs.html#faq" class="doc-link">View FAQ →</a>
                 </div>
                 <div class="doc-card">
                     <div class="doc-icon">
@@ -281,18 +319,18 @@
                     </div>
                     <h3>Video Tutorials</h3>
                     <p>Watch step-by-step video guides for all features.</p>
-                                            <a href="docs.html#tutorials" class="doc-link">Watch Videos →</a>
+                    <a href="docs.html#tutorials" class="doc-link">Watch Videos →</a>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Support Section -->
-    <section id="support" class="support">
+    <section class="support">
         <div class="container">
             <div class="section-header">
-                <h2>Support & Community</h2>
-                <p>We're here to help you succeed</p>
+                <h2>We're here to help you succeed</h2>
+                <p>Get support from our team and community</p>
             </div>
             <div class="support-grid">
                 <div class="support-card">
@@ -301,7 +339,7 @@
                     </div>
                     <h3>Community Forum</h3>
                     <p>Connect with other users, share tips, and get help from the community.</p>
-                                            <a href="support" class="btn btn-outline">Join Forum</a>
+                    <a href="support" class="btn btn-outline">Join Forum</a>
                 </div>
                 <div class="support-card">
                     <div class="support-icon">
@@ -309,7 +347,7 @@
                     </div>
                     <h3>Email Support</h3>
                     <p>Get direct support from our team for technical issues and questions.</p>
-                    <a href="mailto:info@mojokgroup.xyz" class="btn btn-outline">Contact Us</a>
+                    <a href="mailto:drive@mojokgroup.xyz" class="btn btn-outline">Contact Us</a>
                 </div>
                 <div class="support-card">
                     <div class="support-icon">
@@ -317,7 +355,26 @@
                     </div>
                     <h3>GitHub Issues</h3>
                     <p>Report bugs, request features, and contribute to the project.</p>
-                                            <a href="support" class="btn btn-outline">View Issues</a>
+                    <a href="support" class="btn btn-outline">View Issues</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to secure your Google Drive?</h2>
+                <p>Join thousands of users who trust DriveBackup Pro for their backup needs</p>
+                <div class="cta-buttons">
+                    <a href="download" class="btn btn-primary btn-large">
+                        <i class="fas fa-download"></i>
+                        Download Now
+                    </a>
+                    <a href="features" class="btn btn-secondary btn-large">
+                        Learn More
+                    </a>
                 </div>
             </div>
         </div>
@@ -335,7 +392,7 @@
                     <p>Professional Google Drive backup solution for individuals and businesses.</p>
                     <p><strong>By Mojok Dev ke. Solutions</strong></p>
                     <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> info@mojokgroup.xyz</p>
+                        <p><i class="fas fa-envelope"></i> drive@mojokgroup.xyz</p>
                         <p><i class="fas fa-phone"></i> +254798564925</p>
                     </div>
                     <div class="social-links">
@@ -373,7 +430,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 DriveBackup Pro by Mojok Dev ke. Solutions. All rights reserved.</p>
+                <p>&copy; 2025 DriveBackup Pro by Mojok Dev ke. Solutions. All rights reserved.</p>
             </div>
         </div>
     </footer>
