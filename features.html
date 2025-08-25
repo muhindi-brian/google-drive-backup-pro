@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Features - Google Drive Backup Tool</title>
+    <title>Features - DriveBackup Pro</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,6 +24,9 @@
                 <li><a href="support">Support</a></li>
                 <li><a href="about">About</a></li>
             </ul>
+            <div class="nav-actions">
+                <a href="download" class="btn btn-primary">Get Started</a>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -33,20 +36,77 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero features-hero">
-        <div class="container">
+    <section class="hero">
+        <div class="hero-container">
             <div class="hero-content">
-                <h1>Powerful Features</h1>
-                <p>Discover everything our Google Drive Backup Tool can do for you</p>
+                <div class="hero-badge">
+                    <span>Comprehensive Backup Solution</span>
+                </div>
+                <h1>Everything you need for<br>Google Drive backup</h1>
+                <p class="hero-subtitle">Discover powerful features designed to make your backup process seamless, secure, and efficient. From basic file downloads to advanced automation, we've got you covered.</p>
+                <div class="hero-buttons">
+                    <a href="download" class="btn btn-primary btn-large">
+                        <i class="fas fa-download"></i>
+                        Download Now
+                    </a>
+                    <a href="docs" class="btn btn-secondary btn-large">
+                        <i class="fas fa-book"></i>
+                        Read Documentation
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="app-preview">
+                    <div class="app-window">
+                        <div class="app-header">
+                            <div class="app-buttons">
+                                <span class="btn-red"></span>
+                                <span class="btn-yellow"></span>
+                                <span class="btn-green"></span>
+                            </div>
+                            <span class="app-title">DriveBackup Pro - Features</span>
+                        </div>
+                        <div class="app-content">
+                            <div class="tab-bar">
+                                <span class="tab active">Backup</span>
+                                <span class="tab">Convert</span>
+                                <span class="tab">Settings</span>
+                            </div>
+                            <div class="app-body">
+                                <div class="feature-preview">
+                                    <div class="feature-item">
+                                        <i class="fas fa-cloud"></i>
+                                        <span>Complete Drive Backup</span>
+                                        <span class="status success">✓</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-exchange-alt"></i>
+                                        <span>Format Conversion</span>
+                                        <span class="status success">✓</span>
+                                    </div>
+                                    <div class="feature-item">
+                                        <i class="fas fa-sync"></i>
+                                        <span>Incremental Backup</span>
+                                        <span class="status success">✓</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
-    <!-- Features Grid -->
-    <section class="features-detailed">
+    <!-- Core Features -->
+    <section class="features">
         <div class="container">
+            <div class="section-header">
+                <h2>Core Features</h2>
+                <p>Essential capabilities that make DriveBackup Pro the ultimate backup solution</p>
+            </div>
             <div class="features-grid">
-                <div class="feature-card large">
+                <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-cloud"></i>
                     </div>
@@ -60,7 +120,7 @@
                     </ul>
                 </div>
 
-                <div class="feature-card large">
+                <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-exchange-alt"></i>
                     </div>
@@ -74,7 +134,7 @@
                     </ul>
                 </div>
 
-                <div class="feature-card large">
+                <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-sync"></i>
                     </div>
@@ -88,7 +148,7 @@
                     </ul>
                 </div>
 
-                <div class="feature-card large">
+                <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
@@ -102,7 +162,7 @@
                     </ul>
                 </div>
 
-                <div class="feature-card large">
+                <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-desktop"></i>
                     </div>
@@ -116,7 +176,7 @@
                     </ul>
                 </div>
 
-                <div class="feature-card large">
+                <div class="feature-card">
                     <div class="feature-icon">
                         <i class="fas fa-rocket"></i>
                     </div>
@@ -134,54 +194,54 @@
     </section>
 
     <!-- Advanced Features -->
-    <section class="advanced-features">
+    <section class="how-it-works">
         <div class="container">
             <div class="section-header">
                 <h2>Advanced Features</h2>
-                <p>Professional capabilities for power users</p>
+                <p>Professional capabilities for power users and enterprise environments</p>
             </div>
-            <div class="advanced-grid">
-                <div class="advanced-card">
-                    <div class="advanced-icon">
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">
                         <i class="fas fa-cog"></i>
                     </div>
                     <h3>Custom Configuration</h3>
-                    <p>Configure backup settings, file filters, and conversion options to match your specific needs.</p>
+                    <p>Configure backup settings, file filters, and conversion options to match your specific needs and workflows.</p>
                 </div>
 
-                <div class="advanced-card">
-                    <div class="advanced-icon">
+                <div class="step-card">
+                    <div class="step-number">
                         <i class="fas fa-chart-line"></i>
                     </div>
                     <h3>Progress Analytics</h3>
-                    <p>Track backup performance with detailed statistics and completion reports.</p>
+                    <p>Track backup performance with detailed statistics, completion reports, and performance metrics.</p>
                 </div>
 
-                <div class="advanced-card">
-                    <div class="advanced-icon">
+                <div class="step-card">
+                    <div class="step-number">
                         <i class="fas fa-undo"></i>
                     </div>
                     <h3>Error Recovery</h3>
-                    <p>Automatic retry mechanisms and error handling for reliable backups.</p>
+                    <p>Automatic retry mechanisms and intelligent error handling for reliable, uninterrupted backups.</p>
                 </div>
 
-                <div class="advanced-card">
-                    <div class="advanced-icon">
+                <div class="step-card">
+                    <div class="step-number">
                         <i class="fas fa-clock"></i>
                     </div>
                     <h3>Scheduled Backups</h3>
-                    <p>Set up automated backup schedules for regular data protection.</p>
+                    <p>Set up automated backup schedules for regular data protection without manual intervention.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Comparison Table -->
-    <section class="comparison">
+    <section class="documentation">
         <div class="container">
             <div class="section-header">
                 <h2>Feature Comparison</h2>
-                <p>See how our tool compares to other solutions</p>
+                <p>See how DriveBackup Pro compares to other solutions</p>
             </div>
             <div class="comparison-table">
                 <table>
@@ -234,8 +294,8 @@
     <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Ready to Get Started?</h2>
-                <p>Download DriveBackup Pro today and experience the difference</p>
+                <h2>Ready to experience these features?</h2>
+                <p>Download DriveBackup Pro today and start backing up your Google Drive with confidence</p>
                 <div class="cta-buttons">
                     <a href="download" class="btn btn-primary btn-large">
                         <i class="fas fa-download"></i>
@@ -262,7 +322,7 @@
                     <p>Professional Google Drive backup solution for individuals and businesses.</p>
                     <p><strong>By Mojok Dev ke. Solutions</strong></p>
                     <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> info@mojokgroup.xyz</p>
+                        <p><i class="fas fa-envelope"></i> drive@mojokgroup.xyz</p>
                         <p><i class="fas fa-phone"></i> +254798564925</p>
                     </div>
                     <div class="social-links">
@@ -300,7 +360,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 DriveBackup Pro by Mojok Dev ke. Solutions. All rights reserved.</p>
+                <p>&copy; 2025 DriveBackup Pro by Mojok Dev ke. Solutions. All rights reserved.</p>
             </div>
         </div>
     </footer>

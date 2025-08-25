@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Download - Google Drive Backup Tool</title>
+    <title>Download - DriveBackup Pro</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,6 +24,9 @@
                 <li><a href="support">Support</a></li>
                 <li><a href="about">About</a></li>
             </ul>
+            <div class="nav-actions">
+                <a href="download" class="btn btn-primary">Get Started</a>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -33,18 +36,75 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero download-hero">
-        <div class="container">
+    <section class="hero">
+        <div class="hero-container">
             <div class="hero-content">
-                <h1>Download DriveBackup Pro</h1>
-                <p>Get started with your Google Drive backup in minutes</p>
+                <div class="hero-badge">
+                    <span>Ready to Download</span>
+                </div>
+                <h1>Get DriveBackup Pro<br>in minutes</h1>
+                <p class="hero-subtitle">Download the latest version of DriveBackup Pro and start backing up your Google Drive with enterprise-grade reliability. No installation required.</p>
+                <div class="hero-buttons">
+                    <a href="#download" class="btn btn-primary btn-large">
+                        <i class="fas fa-download"></i>
+                        Download Now
+                    </a>
+                    <a href="docs" class="btn btn-secondary btn-large">
+                        <i class="fas fa-book"></i>
+                        Read Documentation
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="app-preview">
+                    <div class="app-window">
+                        <div class="app-header">
+                            <div class="app-buttons">
+                                <span class="btn-red"></span>
+                                <span class="btn-yellow"></span>
+                                <span class="btn-green"></span>
+                            </div>
+                            <span class="app-title">DriveBackup Pro - Download</span>
+                        </div>
+                        <div class="app-content">
+                            <div class="tab-bar">
+                                <span class="tab active">Download</span>
+                                <span class="tab">Install</span>
+                                <span class="tab">Setup</span>
+                            </div>
+                            <div class="app-body">
+                                <div class="download-preview">
+                                    <div class="download-item">
+                                        <i class="fas fa-windows"></i>
+                                        <span>Windows Executable</span>
+                                        <span class="status success">52MB</span>
+                                    </div>
+                                    <div class="download-item">
+                                        <i class="fas fa-code"></i>
+                                        <span>Source Code</span>
+                                        <span class="status success">GitHub</span>
+                                    </div>
+                                    <div class="download-item">
+                                        <i class="fas fa-check-circle"></i>
+                                        <span>Ready to Install</span>
+                                        <span class="status success">✓</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Download Options -->
-    <section class="download-options-detailed">
+    <section id="download" class="download">
         <div class="container">
+            <div class="section-header">
+                <h2>Choose Your Download</h2>
+                <p>Select the option that best fits your needs</p>
+            </div>
             <div class="download-options">
                 <div class="download-card featured">
                     <div class="download-badge">Recommended</div>
@@ -109,121 +169,109 @@
     </section>
 
     <!-- System Requirements -->
-    <section class="system-requirements-detailed">
+    <section class="how-it-works">
         <div class="container">
             <div class="section-header">
                 <h2>System Requirements</h2>
                 <p>Ensure your system meets the requirements for optimal performance</p>
             </div>
-            <div class="requirements-grid-detailed">
-                <div class="requirement-card">
-                    <div class="requirement-icon">
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">
                         <i class="fas fa-desktop"></i>
                     </div>
                     <h3>Operating System</h3>
-                    <p>Windows 10 or later (64-bit)</p>
-                    <ul>
-                        <li>Windows 10 (version 1903 or later)</li>
-                        <li>Windows 11</li>
-                        <li>64-bit architecture required</li>
-                    </ul>
+                    <p>Windows 10 or later (64-bit) with support for Windows 11 and all recent Windows versions.</p>
                 </div>
 
-                <div class="requirement-card">
-                    <div class="requirement-icon">
+                <div class="step-card">
+                    <div class="step-number">
                         <i class="fas fa-memory"></i>
                     </div>
                     <h3>Memory</h3>
-                    <p>4GB RAM minimum, 8GB recommended</p>
-                    <ul>
-                        <li>4GB RAM for basic usage</li>
-                        <li>8GB RAM for large backups</li>
-                        <li>16GB RAM for optimal performance</li>
-                    </ul>
+                    <p>4GB RAM minimum, 8GB recommended for optimal performance with large backup operations.</p>
                 </div>
 
-                <div class="requirement-card">
-                    <div class="requirement-icon">
+                <div class="step-card">
+                    <div class="step-number">
                         <i class="fas fa-hdd"></i>
                     </div>
                     <h3>Storage</h3>
-                    <p>100MB free space minimum</p>
-                    <ul>
-                        <li>100MB for application</li>
-                        <li>Additional space for backups</li>
-                        <li>SSD recommended for speed</li>
-                    </ul>
+                    <p>100MB free space minimum for the application, plus additional space for your backup files.</p>
                 </div>
 
-                <div class="requirement-card">
-                    <div class="requirement-icon">
+                <div class="step-card">
+                    <div class="step-number">
                         <i class="fas fa-wifi"></i>
                     </div>
                     <h3>Network</h3>
-                    <p>Stable internet connection required</p>
-                    <ul>
-                        <li>Broadband internet</li>
-                        <li>Stable connection</li>
-                        <li>No firewall restrictions</li>
-                    </ul>
+                    <p>Stable broadband internet connection required for downloading files from Google Drive.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Installation Guide -->
-    <section class="installation-guide">
+    <section class="features">
         <div class="container">
             <div class="section-header">
                 <h2>Installation Guide</h2>
-                <p>Follow these simple steps to get started</p>
+                <p>Follow these simple steps to get started with DriveBackup Pro</p>
             </div>
-            <div class="installation-steps">
-                <div class="step">
-                    <div class="step-number">1</div>
-                    <div class="step-content">
-                        <h3>Download the File</h3>
-                        <p>Click the download button above to get the latest version of DriveBackup Pro.</p>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-download"></i>
                     </div>
+                    <h3>Download the File</h3>
+                    <p>Click the download button above to get the latest version of DriveBackup Pro.</p>
                 </div>
 
-                <div class="step">
-                    <div class="step-number">2</div>
-                    <div class="step-content">
-                        <h3>Extract the Archive</h3>
-                        <p>Extract the downloaded ZIP file to a folder of your choice using Windows Explorer or any archive tool.</p>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-folder-open"></i>
                     </div>
+                    <h3>Extract the Archive</h3>
+                    <p>Extract the downloaded ZIP file to a folder of your choice using Windows Explorer or any archive tool.</p>
                 </div>
 
-                <div class="step">
-                    <div class="step-number">3</div>
-                    <div class="step-content">
-                        <h3>Run the Application</h3>
-                        <p>Double-click the <code>GoogleDriveBackupTool.exe</code> file to start the application.</p>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-play"></i>
                     </div>
+                    <h3>Run the Application</h3>
+                    <p>Double-click the <code>GoogleDriveBackupTool.exe</code> file to start the application.</p>
                 </div>
 
-                <div class="step">
-                    <div class="step-number">4</div>
-                    <div class="step-content">
-                        <h3>Authenticate with Google</h3>
-                        <p>Follow the authentication process to grant access to your Google Drive account.</p>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
                     </div>
+                    <h3>Authenticate with Google</h3>
+                    <p>Follow the authentication process to grant access to your Google Drive account securely.</p>
                 </div>
 
-                <div class="step">
-                    <div class="step-number">5</div>
-                    <div class="step-content">
-                        <h3>Start Your First Backup</h3>
-                        <p>Configure your backup settings and start backing up your Google Drive files.</p>
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-rocket"></i>
                     </div>
+                    <h3>Start Your First Backup</h3>
+                    <p>Configure your backup settings and start backing up your Google Drive files immediately.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
+                    </div>
+                    <h3>Monitor Progress</h3>
+                    <p>Track your backup progress in real-time with detailed logs and completion statistics.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Version History -->
-    <section class="version-history">
+    <section class="documentation">
         <div class="container">
             <div class="section-header">
                 <h2>Version History</h2>
@@ -270,7 +318,7 @@
     </section>
 
     <!-- FAQ Section -->
-    <section class="download-faq">
+    <section class="support">
         <div class="container">
             <div class="section-header">
                 <h2>Frequently Asked Questions</h2>
@@ -320,6 +368,26 @@
         </div>
     </section>
 
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Ready to get started?</h2>
+                <p>Download DriveBackup Pro today and start backing up your Google Drive with confidence</p>
+                <div class="cta-buttons">
+                    <a href="#download" class="btn btn-primary btn-large">
+                        <i class="fas fa-download"></i>
+                        Download Now
+                    </a>
+                    <a href="docs" class="btn btn-secondary btn-large">
+                        <i class="fas fa-book"></i>
+                        Read Documentation
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
     <footer class="footer">
         <div class="container">
@@ -332,7 +400,7 @@
                     <p>Professional Google Drive backup solution for individuals and businesses.</p>
                     <p><strong>By Mojok Dev ke. Solutions</strong></p>
                     <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> info@mojokgroup.xyz</p>
+                        <p><i class="fas fa-envelope"></i> drive@mojokgroup.xyz</p>
                         <p><i class="fas fa-phone"></i> +254798564925</p>
                     </div>
                     <div class="social-links">
@@ -370,7 +438,7 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 DriveBackup Pro by Mojok Dev ke. Solutions. All rights reserved.</p>
+                <p>&copy; 2025 DriveBackup Pro by Mojok Dev ke. Solutions. All rights reserved.</p>
             </div>
         </div>
     </footer>

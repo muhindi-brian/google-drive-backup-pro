@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Support - Google Drive Backup Tool</title>
+    <title>Support - DriveBackup Pro</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -24,6 +24,9 @@
                 <li><a href="support" class="active">Support</a></li>
                 <li><a href="about">About</a></li>
             </ul>
+            <div class="nav-actions">
+                <a href="download" class="btn btn-primary">Get Started</a>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -33,18 +36,75 @@
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero support-hero">
-        <div class="container">
+    <section class="hero">
+        <div class="hero-container">
             <div class="hero-content">
-                <h1>Support & Community</h1>
-                <p>We're here to help you succeed with DriveBackup Pro</p>
+                <div class="hero-badge">
+                    <span>24/7 Support Available</span>
+                </div>
+                <h1>We're here to help<br>you succeed</h1>
+                <p class="hero-subtitle">Get the support you need with DriveBackup Pro. From documentation to direct assistance, we've got you covered every step of the way.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">
+                        <i class="fas fa-headset"></i>
+                        Contact Support
+                    </a>
+                    <a href="docs" class="btn btn-secondary btn-large">
+                        <i class="fas fa-book"></i>
+                        Read Documentation
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="app-preview">
+                    <div class="app-window">
+                        <div class="app-header">
+                            <div class="app-buttons">
+                                <span class="btn-red"></span>
+                                <span class="btn-yellow"></span>
+                                <span class="btn-green"></span>
+                            </div>
+                            <span class="app-title">DriveBackup Pro - Support</span>
+                        </div>
+                        <div class="app-content">
+                            <div class="tab-bar">
+                                <span class="tab active">Help</span>
+                                <span class="tab">Contact</span>
+                                <span class="tab">Status</span>
+                            </div>
+                            <div class="app-body">
+                                <div class="support-preview">
+                                    <div class="support-item">
+                                        <i class="fas fa-book"></i>
+                                        <span>Documentation</span>
+                                        <span class="status success">Available</span>
+                                    </div>
+                                    <div class="support-item">
+                                        <i class="fas fa-headset"></i>
+                                        <span>Live Support</span>
+                                        <span class="status success">Online</span>
+                                    </div>
+                                    <div class="support-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>Community</span>
+                                        <span class="status success">Active</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Support Options -->
-    <section class="support-options">
+    <section class="support">
         <div class="container">
+            <div class="section-header">
+                <h2>Support Options</h2>
+                <p>Choose the best way to get the help you need</p>
+            </div>
             <div class="support-grid">
                 <div class="support-card">
                     <div class="support-icon">
@@ -56,7 +116,8 @@
                 </div>
 
                 <div class="support-card">
-                    <div class="fas fa-comments"></i>
+                    <div class="support-icon">
+                        <i class="fas fa-comments"></i>
                     </div>
                     <h3>Community Forum</h3>
                     <p>Connect with other users, share tips, and get help from the community.</p>
@@ -69,7 +130,7 @@
                     </div>
                     <h3>Email Support</h3>
                     <p>Get direct support from our team for technical issues and questions.</p>
-                    <a href="mailto:support@drivebackup.com" class="btn btn-outline">Contact Us</a>
+                    <a href="mailto:drive@mojokgroup.xyz" class="btn btn-outline">Contact Us</a>
                 </div>
 
                 <div class="support-card">
@@ -103,71 +164,51 @@
     </section>
 
     <!-- Help Categories -->
-    <section class="help-categories">
+    <section class="how-it-works">
         <div class="container">
             <div class="section-header">
                 <h2>Help Categories</h2>
                 <p>Find the help you need quickly</p>
             </div>
             
-            <div class="categories-grid">
-                <div class="category-card">
-                    <div class="category-icon">
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">
                         <i class="fas fa-rocket"></i>
                     </div>
                     <h3>Getting Started</h3>
-                    <ul>
-                        <li><a href="docs.html#quick-start">Quick Start Guide</a></li>
-                        <li><a href="download">Download & Installation</a></li>
-                        <li><a href="docs.html#configuration">First-time Setup</a></li>
-                        <li><a href="docs.html#tutorials">Video Tutorials</a></li>
-                    </ul>
+                    <p>Quick start guides, installation help, and first-time setup assistance for new users.</p>
                 </div>
 
-                <div class="category-card">
-                    <div class="category-icon">
+                <div class="step-card">
+                    <div class="step-number">
                         <i class="fas fa-cog"></i>
                     </div>
                     <h3>Configuration</h3>
-                    <ul>
-                        <li><a href="docs.html#configuration">Google API Setup</a></li>
-                        <li><a href="docs.html#api-reference">Advanced Settings</a></li>
-                        <li><a href="docs.html#faq">Common Issues</a></li>
-                        <li><a href="#">Best Practices</a></li>
-                    </ul>
+                    <p>Google API setup, advanced settings, and best practices for optimal performance.</p>
                 </div>
 
-                <div class="category-card">
-                    <div class="category-icon">
+                <div class="step-card">
+                    <div class="step-number">
                         <i class="fas fa-exclamation-triangle"></i>
                     </div>
                     <h3>Troubleshooting</h3>
-                    <ul>
-                        <li><a href="#">Authentication Errors</a></li>
-                        <li><a href="#">Download Failures</a></li>
-                        <li><a href="#">Performance Issues</a></li>
-                        <li><a href="#">Error Messages</a></li>
-                    </ul>
+                    <p>Solutions for authentication errors, download failures, and common issues.</p>
                 </div>
 
-                <div class="category-card">
-                    <div class="category-icon">
+                <div class="step-card">
+                    <div class="step-number">
                         <i class="fas fa-code"></i>
                     </div>
                     <h3>Development</h3>
-                    <ul>
-                        <li><a href="docs.html#api-reference">API Reference</a></li>
-                        <li><a href="#">Contributing Guide</a></li>
-                        <li><a href="#">Source Code</a></li>
-                        <li><a href="#">Customization</a></li>
-                    </ul>
+                    <p>API reference, contributing guidelines, and customization help for developers.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Contact Form -->
-    <section class="contact-form">
+    <section id="contact" class="features">
         <div class="container">
             <div class="section-header">
                 <h2>Contact Support</h2>
@@ -184,7 +225,7 @@
                             <i class="fas fa-envelope"></i>
                             <div>
                                 <h4>Email Support</h4>
-                                <p>info@mojokgroup.xyz</p>
+                                <p>drive@mojokgroup.xyz</p>
                                 <small>Response within 24 hours</small>
                             </div>
                         </div>
@@ -258,16 +299,16 @@
     </section>
 
     <!-- Community Section -->
-    <section class="community-section">
+    <section class="documentation">
         <div class="container">
             <div class="section-header">
                 <h2>Join Our Community</h2>
                 <p>Connect with other users and stay updated</p>
             </div>
             
-            <div class="community-grid">
-                <div class="community-card">
-                    <div class="community-icon">
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <div class="doc-icon">
                         <i class="fab fa-github"></i>
                     </div>
                     <h3>GitHub</h3>
@@ -279,8 +320,8 @@
                     <a href="#" class="btn btn-outline">Visit GitHub</a>
                 </div>
 
-                <div class="community-card">
-                    <div class="community-icon">
+                <div class="doc-card">
+                    <div class="doc-icon">
                         <i class="fab fa-discord"></i>
                     </div>
                     <h3>Discord</h3>
@@ -292,8 +333,8 @@
                     <a href="#" class="btn btn-outline">Join Discord</a>
                 </div>
 
-                <div class="community-card">
-                    <div class="community-icon">
+                <div class="doc-card">
+                    <div class="doc-icon">
                         <i class="fab fa-twitter"></i>
                     </div>
                     <h3>Twitter</h3>
@@ -305,8 +346,8 @@
                     <a href="#" class="btn btn-outline">Follow Us</a>
                 </div>
 
-                <div class="community-card">
-                    <div class="community-icon">
+                <div class="doc-card">
+                    <div class="doc-icon">
                         <i class="fab fa-youtube"></i>
                     </div>
                     <h3>YouTube</h3>
@@ -322,53 +363,69 @@
     </section>
 
     <!-- Status Page -->
-    <section class="status-section">
+    <section class="how-it-works">
         <div class="container">
             <div class="section-header">
                 <h2>Service Status</h2>
                 <p>Check the current status of our services</p>
             </div>
             
-            <div class="status-grid">
-                <div class="status-card operational">
-                    <div class="status-indicator"></div>
-                    <div class="status-content">
-                        <h3>Google Drive API</h3>
-                        <p>All systems operational</p>
-                        <small>Last updated: 2 minutes ago</small>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">
+                        <i class="fas fa-check-circle"></i>
                     </div>
+                    <h3>Google Drive API</h3>
+                    <p>All systems operational - Last updated: 2 minutes ago</p>
                 </div>
 
-                <div class="status-card operational">
-                    <div class="status-indicator"></div>
-                    <div class="status-content">
-                        <h3>Authentication Service</h3>
-                        <p>All systems operational</p>
-                        <small>Last updated: 5 minutes ago</small>
+                <div class="step-card">
+                    <div class="step-number">
+                        <i class="fas fa-check-circle"></i>
                     </div>
+                    <h3>Authentication Service</h3>
+                    <p>All systems operational - Last updated: 5 minutes ago</p>
                 </div>
 
-                <div class="status-card operational">
-                    <div class="status-indicator"></div>
-                    <div class="status-content">
-                        <h3>Download Service</h3>
-                        <p>All systems operational</p>
-                        <small>Last updated: 1 minute ago</small>
+                <div class="step-card">
+                    <div class="step-number">
+                        <i class="fas fa-check-circle"></i>
                     </div>
+                    <h3>Download Service</h3>
+                    <p>All systems operational - Last updated: 1 minute ago</p>
                 </div>
 
-                <div class="status-card operational">
-                    <div class="status-indicator"></div>
-                    <div class="status-content">
-                        <h3>Website</h3>
-                        <p>All systems operational</p>
-                        <small>Last updated: 30 seconds ago</small>
+                <div class="step-card">
+                    <div class="step-number">
+                        <i class="fas fa-check-circle"></i>
                     </div>
+                    <h3>Website</h3>
+                    <p>All systems operational - Last updated: 30 seconds ago</p>
                 </div>
             </div>
             
             <div class="status-footer">
                 <a href="#" class="btn btn-outline">View Full Status Page</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="cta-section">
+        <div class="container">
+            <div class="cta-content">
+                <h2>Need immediate help?</h2>
+                <p>Our support team is ready to assist you with any questions or issues</p>
+                <div class="cta-buttons">
+                    <a href="#contact" class="btn btn-primary btn-large">
+                        <i class="fas fa-headset"></i>
+                        Contact Support
+                    </a>
+                    <a href="docs" class="btn btn-secondary btn-large">
+                        <i class="fas fa-book"></i>
+                        Read Documentation
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -385,7 +442,7 @@
                     <p>Professional Google Drive backup solution for individuals and businesses.</p>
                     <p><strong>By Mojok Dev ke. Solutions</strong></p>
                     <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> info@mojokgroup.xyz</p>
+                        <p><i class="fas fa-envelope"></i> drive@mojokgroup.xyz</p>
                         <p><i class="fas fa-phone"></i> +254798564925</p>
                     </div>
                     <div class="social-links">
@@ -423,11 +480,196 @@
                 </div>
             </div>
             <div class="footer-bottom">
-                <p>&copy; 2024 DriveBackup Pro by Mojok Dev ke. Solutions. All rights reserved.</p>
+                <p>&copy; 2025 DriveBackup Pro by Mojok Dev ke. Solutions. All rights reserved.</p>
             </div>
         </div>
     </footer>
 
     <script src="script.js"></script>
+    <script>
+        // Contact form handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const contactForm = document.querySelector('.support-form');
+            const submitButton = contactForm.querySelector('button[type="submit"]');
+            const originalButtonText = submitButton.innerHTML;
+
+            contactForm.addEventListener('submit', async function(e) {
+                e.preventDefault();
+
+                // Get form data
+                const formData = {
+                    name: document.getElementById('name').value.trim(),
+                    email: document.getElementById('email').value.trim(),
+                    subject: document.getElementById('subject').value,
+                    message: document.getElementById('message').value.trim(),
+                    priority: document.getElementById('priority').value
+                };
+
+                // Validation
+                if (!formData.name || !formData.email || !formData.subject || !formData.message) {
+                    showNotification('Please fill in all required fields.', 'error');
+                    return;
+                }
+
+                // Email validation
+                const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+                if (!emailRegex.test(formData.email)) {
+                    showNotification('Please enter a valid email address.', 'error');
+                    return;
+                }
+
+                // Show loading state
+                submitButton.disabled = true;
+                submitButton.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+
+                try {
+                    const response = await fetch('/api/contact', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify(formData)
+                    });
+
+                    const result = await response.json();
+
+                    if (result.success) {
+                        showNotification(result.message, 'success');
+                        contactForm.reset();
+                    } else {
+                        showNotification(result.message, 'error');
+                    }
+                } catch (error) {
+                    console.error('Error:', error);
+                    showNotification('Sorry, there was an error sending your message. Please try again later.', 'error');
+                } finally {
+                    // Reset button state
+                    submitButton.disabled = false;
+                    submitButton.innerHTML = originalButtonText;
+                }
+            });
+        });
+
+        // Notification system
+        function showNotification(message, type = 'info') {
+            // Remove existing notifications
+            const existingNotifications = document.querySelectorAll('.notification');
+            existingNotifications.forEach(notification => notification.remove());
+
+            // Create notification element
+            const notification = document.createElement('div');
+            notification.className = `notification notification-${type}`;
+            notification.innerHTML = `
+                <div class="notification-content">
+                    <i class="fas ${getNotificationIcon(type)}"></i>
+                    <span>${message}</span>
+                    <button class="notification-close" onclick="this.parentElement.parentElement.remove()">
+                        <i class="fas fa-times"></i>
+                    </button>
+                </div>
+            `;
+
+            // Add styles
+            notification.style.cssText = `
+                position: fixed;
+                top: 20px;
+                right: 20px;
+                z-index: 10000;
+                max-width: 400px;
+                padding: 16px;
+                border-radius: 8px;
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+                animation: slideIn 0.3s ease-out;
+                font-family: 'Inter', sans-serif;
+            `;
+
+            // Set background color based on type
+            const colors = {
+                success: '#10b981',
+                error: '#ef4444',
+                warning: '#f59e0b',
+                info: '#3b82f6'
+            };
+            notification.style.backgroundColor = colors[type] || colors.info;
+            notification.style.color = 'white';
+
+            // Add to page
+            document.body.appendChild(notification);
+
+            // Auto remove after 5 seconds
+            setTimeout(() => {
+                if (notification.parentElement) {
+                    notification.style.animation = 'slideOut 0.3s ease-in';
+                    setTimeout(() => {
+                        if (notification.parentElement) {
+                            notification.remove();
+                        }
+                    }, 300);
+                }
+            }, 5000);
+        }
+
+        function getNotificationIcon(type) {
+            const icons = {
+                success: 'fa-check-circle',
+                error: 'fa-exclamation-circle',
+                warning: 'fa-exclamation-triangle',
+                info: 'fa-info-circle'
+            };
+            return icons[type] || icons.info;
+        }
+
+        // Add CSS animations
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideIn {
+                from {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+                to {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+            }
+            
+            @keyframes slideOut {
+                from {
+                    transform: translateX(0);
+                    opacity: 1;
+                }
+                to {
+                    transform: translateX(100%);
+                    opacity: 0;
+                }
+            }
+
+            .notification-content {
+                display: flex;
+                align-items: center;
+                gap: 12px;
+            }
+
+            .notification-close {
+                background: none;
+                border: none;
+                color: white;
+                cursor: pointer;
+                padding: 4px;
+                margin-left: auto;
+                opacity: 0.7;
+                transition: opacity 0.2s;
+            }
+
+            .notification-close:hover {
+                opacity: 1;
+            }
+
+            .notification-content i:first-child {
+                font-size: 1.2rem;
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
 </body>
 </html>

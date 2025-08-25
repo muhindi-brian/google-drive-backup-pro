@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Google Drive Backup Tool</title>
+    <title>About - DriveBackup Pro</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -22,7 +22,11 @@
                 <li><a href="download">Download</a></li>
                 <li><a href="docs">Documentation</a></li>
                 <li><a href="support">Support</a></li>
+                <li><a href="about" class="active">About</a></li>
             </ul>
+            <div class="nav-actions">
+                <a href="download" class="btn btn-primary">Get Started</a>
+            </div>
             <div class="hamburger">
                 <span></span>
                 <span></span>
@@ -31,231 +35,271 @@
         </div>
     </nav>
 
-    <!-- About Hero Section -->
-    <section class="about-hero">
-        <div class="container">
-            <div class="about-hero-content">
-                <h1>About DriveBackup Pro</h1>
-                <p>We're dedicated to providing secure, reliable, and user-friendly backup solutions for Google Drive users worldwide.</p>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>About Our Company</span>
+                </div>
+                <h1>Building the future of<br>cloud backup</h1>
+                <p class="hero-subtitle">We're dedicated to providing secure, reliable, and user-friendly backup solutions for Google Drive users worldwide. Our mission is to protect your digital assets with enterprise-grade technology.</p>
+                <div class="hero-buttons">
+                    <a href="#mission" class="btn btn-primary btn-large">
+                        <i class="fas fa-rocket"></i>
+                        Learn More
+                    </a>
+                    <a href="download" class="btn btn-secondary btn-large">
+                        <i class="fas fa-download"></i>
+                        Download Now
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="app-preview">
+                    <div class="app-window">
+                        <div class="app-header">
+                            <div class="app-buttons">
+                                <span class="btn-red"></span>
+                                <span class="btn-yellow"></span>
+                                <span class="btn-green"></span>
+                            </div>
+                            <span class="app-title">DriveBackup Pro - About</span>
+                        </div>
+                        <div class="app-content">
+                            <div class="tab-bar">
+                                <span class="tab active">Company</span>
+                                <span class="tab">Team</span>
+                                <span class="tab">Values</span>
+                            </div>
+                            <div class="app-body">
+                                <div class="about-preview">
+                                    <div class="about-item">
+                                        <i class="fas fa-users"></i>
+                                        <span>10K+ Users</span>
+                                        <span class="status success">Active</span>
+                                    </div>
+                                    <div class="about-item">
+                                        <i class="fas fa-shield-alt"></i>
+                                        <span>99.9% Success</span>
+                                        <span class="status success">Rate</span>
+                                    </div>
+                                    <div class="about-item">
+                                        <i class="fas fa-headset"></i>
+                                        <span>24/7 Support</span>
+                                        <span class="status success">Available</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- Mission Section -->
-    <section class="mission-section">
+    <section id="mission" class="features">
         <div class="container">
-            <div class="mission-content">
-                <div class="mission-text">
-                    <h2>Our Mission</h2>
-                    <p>At DriveBackup Pro, we believe that your digital data deserves the highest level of protection and accessibility. Our mission is to provide individuals and businesses with powerful, secure, and easy-to-use tools for backing up their Google Drive content.</p>
+            <div class="section-header">
+                <h2>Our Mission</h2>
+                <p>Protecting your digital world with innovative backup solutions</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Security First</h3>
+                    <p>We believe that your digital data deserves the highest level of protection and accessibility. Our mission is to provide individuals and businesses with powerful, secure, and easy-to-use tools for backing up their Google Drive content.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Privacy Protection</h3>
                     <p>We understand the importance of data security and privacy in today's digital world. That's why we've built our application with privacy-first principles, ensuring that your data remains under your control at all times.</p>
                 </div>
-                <div class="mission-stats">
-                    <div class="stat-item">
-                        <div class="stat-number">10K+</div>
-                        <div class="stat-label">Active Users</div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-cogs"></i>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number">99.9%</div>
-                        <div class="stat-label">Success Rate</div>
+                    <h3>Reliability</h3>
+                    <p>We build robust, dependable solutions that you can trust for your critical backup needs. Our team of experienced developers and designers work together to deliver high-quality software solutions.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
                     </div>
-                    <div class="stat-item">
-                        <div class="stat-number">24/7</div>
-                        <div class="stat-label">Support</div>
-                    </div>
+                    <h3>User-Centric</h3>
+                    <p>Every feature is designed with the user in mind, ensuring an intuitive and efficient experience. We specialize in developing secure, user-friendly applications that solve real-world problems.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Company Information Section -->
-    <section class="company-section">
+    <section class="how-it-works">
         <div class="container">
-            <div class="company-content">
-                <div class="company-info">
-                    <h2>About Mojok Dev ke. Solutions</h2>
-                    <p>DriveBackup Pro is proudly developed by <strong>Mojok Dev ke. Solutions</strong>, a professional software development company dedicated to creating innovative and reliable solutions for businesses and individuals.</p>
-                    <p>We specialize in developing secure, user-friendly applications that solve real-world problems. Our team of experienced developers and designers work together to deliver high-quality software solutions that exceed expectations.</p>
-                    
-                    <div class="company-contact">
-                        <h3>Get in Touch</h3>
-                        <div class="contact-details">
-                            <div class="contact-item">
-                                <i class="fas fa-envelope"></i>
-                                <span>Email: info@mojokgroup.xyz</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-phone"></i>
-                                <span>Phone: +254798564925</span>
-                            </div>
-                            <div class="contact-item">
-                                <i class="fas fa-building"></i>
-                                <span>Company: Mojok Dev ke. Solutions</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="company-stats">
-                    <div class="company-stat">
-                        <div class="stat-icon">
-                            <i class="fas fa-code"></i>
-                        </div>
-                        <div class="stat-content">
-                            <h4>Professional Development</h4>
-                            <p>Expert software solutions</p>
-                        </div>
-                    </div>
-                    <div class="company-stat">
-                        <div class="stat-icon">
-                            <i class="fas fa-shield-alt"></i>
-                        </div>
-                        <div class="stat-content">
-                            <h4>Security Focused</h4>
-                            <p>Privacy-first approach</p>
-                        </div>
-                    </div>
-                    <div class="company-stat">
-                        <div class="stat-icon">
-                            <i class="fas fa-users"></i>
-                        </div>
-                        <div class="stat-content">
-                            <h4>Customer Support</h4>
-                            <p>Dedicated assistance</p>
-                        </div>
-                    </div>
-                </div>
+            <div class="section-header">
+                <h2>About Mojok Dev ke. Solutions</h2>
+                <p>Professional software development company dedicated to innovation</p>
             </div>
-        </div>
-    </section>
+            <div class="steps-grid">
+                <div class="step-card">
+                    <div class="step-number">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Professional Development</h3>
+                    <p>Expert software solutions with experienced developers and designers working together to deliver high-quality software solutions that exceed expectations.</p>
+                </div>
 
-    <!-- Values Section -->
-    <section class="values-section">
-        <div class="container">
-            <h2>Our Values</h2>
-            <div class="values-grid">
-                <div class="value-card">
-                    <div class="value-icon">
+                <div class="step-card">
+                    <div class="step-number">
                         <i class="fas fa-shield-alt"></i>
                     </div>
-                    <h3>Security First</h3>
-                    <p>We prioritize the security of your data with industry-standard encryption and secure authentication methods.</p>
+                    <h3>Security Focused</h3>
+                    <p>Privacy-first approach with industry-standard encryption and secure authentication methods to protect your valuable data.</p>
                 </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-user-shield"></i>
-                    </div>
-                    <h3>Privacy Protection</h3>
-                    <p>Your privacy is paramount. We never access, store, or transmit your personal data without your explicit consent.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">
-                        <i class="fas fa-cogs"></i>
-                    </div>
-                    <h3>Reliability</h3>
-                    <p>We build robust, dependable solutions that you can trust for your critical backup needs.</p>
-                </div>
-                <div class="value-card">
-                    <div class="value-icon">
+
+                <div class="step-card">
+                    <div class="step-number">
                         <i class="fas fa-users"></i>
                     </div>
-                    <h3>User-Centric</h3>
-                    <p>Every feature is designed with the user in mind, ensuring an intuitive and efficient experience.</p>
+                    <h3>Customer Support</h3>
+                    <p>Dedicated assistance with knowledgeable support specialists ready to help you with any questions or issues you may have.</p>
+                </div>
+
+                <div class="step-card">
+                    <div class="step-number">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Company Contact</h3>
+                    <p>Get in touch with us: Email: drive@mojokgroup.xyz, Phone: +254798564925, Company: Mojok Dev ke. Solutions</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Team Section -->
-    <section class="team-section">
+    <section class="documentation">
         <div class="container">
-            <h2>Our Team</h2>
-            <div class="team-grid">
-                <div class="team-member">
-                    <div class="member-avatar">
-                        <i class="fas fa-user"></i>
+            <div class="section-header">
+                <h2>Our Team</h2>
+                <p>Meet the experts behind DriveBackup Pro</p>
+            </div>
+            <div class="docs-grid">
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-code"></i>
                     </div>
                     <h3>Development Team</h3>
-                    <p>Experienced software engineers dedicated to creating secure and reliable backup solutions.</p>
+                    <p>Experienced software engineers dedicated to creating secure and reliable backup solutions with cutting-edge technology.</p>
                 </div>
-                <div class="team-member">
-                    <div class="member-avatar">
+
+                <div class="doc-card">
+                    <div class="doc-icon">
                         <i class="fas fa-headset"></i>
                     </div>
                     <h3>Support Team</h3>
-                    <p>Knowledgeable support specialists ready to help you with any questions or issues.</p>
+                    <p>Knowledgeable support specialists ready to help you with any questions or issues, providing 24/7 assistance.</p>
                 </div>
-                <div class="team-member">
-                    <div class="member-avatar">
+
+                <div class="doc-card">
+                    <div class="doc-icon">
                         <i class="fas fa-shield-alt"></i>
                     </div>
                     <h3>Security Team</h3>
-                    <p>Security experts ensuring our application meets the highest standards of data protection.</p>
+                    <p>Security experts ensuring our application meets the highest standards of data protection and privacy compliance.</p>
+                </div>
+
+                <div class="doc-card">
+                    <div class="doc-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Quality Assurance</h3>
+                    <p>QA specialists who thoroughly test every feature to ensure reliability, performance, and user satisfaction.</p>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Compliance Section -->
-    <section class="compliance-section">
+    <section class="features">
         <div class="container">
-            <h2>Google API Compliance</h2>
-            <div class="compliance-content">
-                <div class="compliance-text">
-                    <h3>We're Committed to Google's Standards</h3>
-                    <p>DriveBackup Pro is fully compliant with Google's API Services User Data Policy and OAuth 2.0 requirements. We take our responsibility to protect user data seriously and have implemented comprehensive measures to ensure compliance.</p>
-                    
-                    <div class="compliance-features">
-                        <div class="compliance-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Minimum necessary permissions only</span>
-                        </div>
-                        <div class="compliance-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>No data used for advertising</span>
-                        </div>
-                        <div class="compliance-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Clear data usage information</span>
-                        </div>
-                        <div class="compliance-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Easy access revocation</span>
-                        </div>
-                        <div class="compliance-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Secure OAuth 2.0 implementation</span>
-                        </div>
-                        <div class="compliance-feature">
-                            <i class="fas fa-check-circle"></i>
-                            <span>Privacy-first design</span>
-                        </div>
+            <div class="section-header">
+                <h2>Google API Compliance</h2>
+                <p>We're committed to Google's standards and your privacy</p>
+            </div>
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-check-circle"></i>
                     </div>
+                    <h3>Minimum Permissions</h3>
+                    <p>We request only the minimum necessary permissions to perform backup operations, ensuring your data remains secure.</p>
                 </div>
-                <div class="compliance-certification">
-                    <div class="certification-card">
-                        <i class="fab fa-google"></i>
-                        <h4>Google API Verified</h4>
-                        <p>Our application has been verified to meet Google's API requirements and security standards.</p>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-ban"></i>
                     </div>
+                    <h3>No Advertising</h3>
+                    <p>Your data is never used for advertising purposes. We respect your privacy and maintain strict data usage policies.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-info-circle"></i>
+                    </div>
+                    <h3>Clear Information</h3>
+                    <p>We provide clear and transparent information about how your data is used and processed during backup operations.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-unlock"></i>
+                    </div>
+                    <h3>Easy Revocation</h3>
+                    <p>You can easily revoke access to your Google Drive at any time through your Google account settings.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Secure OAuth 2.0</h3>
+                    <p>We implement secure OAuth 2.0 authentication following Google's best practices and security standards.</p>
+                </div>
+
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h3>Privacy-First Design</h3>
+                    <p>Our application is built with privacy-first principles, ensuring your data remains under your control at all times.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Contact CTA -->
-    <section class="contact-cta">
+    <!-- CTA Section -->
+    <section class="cta-section">
         <div class="container">
             <div class="cta-content">
-                <h2>Get in Touch</h2>
-                <p>Have questions about our application or need support? We're here to help.</p>
+                <h2>Ready to get started?</h2>
+                <p>Join thousands of users who trust DriveBackup Pro for their Google Drive backup needs</p>
                 <div class="cta-buttons">
-                    <a href="support" class="btn btn-primary">
+                    <a href="download" class="btn btn-primary btn-large">
+                        <i class="fas fa-download"></i>
+                        Download Now
+                    </a>
+                    <a href="support" class="btn btn-secondary btn-large">
                         <i class="fas fa-headset"></i>
                         Contact Support
-                    </a>
-                    <a href="docs" class="btn btn-secondary">
-                        <i class="fas fa-book"></i>
-                        View Documentation
                     </a>
                 </div>
             </div>
@@ -267,11 +311,14 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>DriveBackup Pro</h4>
+                    <div class="footer-logo">
+                        <i class="fas fa-cloud-download-alt"></i>
+                        <span>DriveBackup Pro</span>
+                    </div>
                     <p>Professional Google Drive backup solution for individuals and businesses.</p>
                     <p><strong>By Mojok Dev ke. Solutions</strong></p>
                     <div class="contact-info">
-                        <p><i class="fas fa-envelope"></i> info@mojokgroup.xyz</p>
+                        <p><i class="fas fa-envelope"></i> drive@mojokgroup.xyz</p>
                         <p><i class="fas fa-phone"></i> +254798564925</p>
                     </div>
                     <div class="social-links">
@@ -317,3 +364,4 @@
     <script src="script.js"></script>
 </body>
 </html>
+
